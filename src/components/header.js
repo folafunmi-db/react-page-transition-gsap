@@ -2,8 +2,21 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
 	return (
-		<div>
-			<NavLink></NavLink>
+		<div className="header">
+			<NavLink
+				to="/"
+				exact
+				activeStyle={{ fontWeight: "bold", color: "red" }}
+			>
+				Home
+			</NavLink>
+			<NavLink
+				to="/about"
+				exact
+				activeStyle={{ fontWeight: "bold", color: "red" }}
+			>
+				About
+			</NavLink>
 		</div>
 	);
 };
