@@ -16,8 +16,8 @@
 
 .container {
 	position: relative;
-	width: 1280px;
-	min-width: 1280px;
+	max-width: 1280px;
+	min-width: 600px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
@@ -36,6 +36,10 @@
 				.line-wrap {
 					overflow: hidden;
 					height: 66px;
+
+					.line {
+						color: #653fff;
+					}
 				}
 			}
 
@@ -49,4 +53,23 @@
 			}
 		}
 	}
+}
+
+.page-enter {
+    opacity: 0;
+}
+
+.page-enter-active {
+    opacity: 1;
+	transition: opacity 400ms;
+	transition-delay: 600ms;
+}
+
+.page-exit {
+    opacity: 1;
+}
+
+.page-exit-active {
+	opacity: 0;
+	transition: opacity 400ms;
 }

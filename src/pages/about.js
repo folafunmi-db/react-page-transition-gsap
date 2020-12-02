@@ -3,7 +3,7 @@ import Title from "../components/title";
 const About = () => {
 	return (
 		<div className="inner">
-			<Title lineContent={"This is the "} lineContent2={"about page"} />
+			<Title lineContent={"Front End "} lineContent2={"Developer"} />
 			<div>
 				<p className="info">
 					In ipsum labore cillum tempor. Labore adipisicing irure

@@ -13,8 +13,42 @@ const routes = [
 ];
 
 function App() {
+	const onEnter = (node) => {
+		//enter animation
+		gsap.from(
+			[
+				node.children[0].firstElementChild,
+				node.children[0].lastElementChild,
+			],
+			0.6,
+			{
+				y: 30,
+				delay: 0.6,
+				ease: "power3.easeInOut",
+				opacity: 0,
+				stagger: 0.6,
+			}
+		);
+	};
+
+	const onExit = (node) => {
+		//exit animation
+		gsap.to(
+			[
+				node.children[0].firstElementChild,
+				node.children[0].lastElementChild,
+			],
+			0.6,
+			{
+				y: -30,
+				ease: "power3.easeInOut",
+				stagger: 0.6,
+			}
+		);
+	};
+
 	return (
-		<div>
+		<div className="App">
 			<Header />
 			<div className="container">
 				{routes.map(({ path, Component }) => (
@@ -24,6 +58,8 @@ function App() {
 								in={match != null}
 								timeout={1200}
 								classNames="page"
+								onExit={onExit}
+								onEnter={onEnter}
 								unmountOnExit
 							>
 								<div className="page">

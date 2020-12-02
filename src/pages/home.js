@@ -3,7 +3,7 @@ import Title from "../components/title";
 const Home = () => {
 	return (
 		<div className="inner">
-			<Title lineContent={"This is the "} lineContent2={"home page"} />
+			<Title lineContent={"Mustapha "} lineContent2={"Folafunmi"} />
 			<div>
 				<p className="info">
 					Incididunt irure in deserunt cupidatat tempor culpa. Duis in

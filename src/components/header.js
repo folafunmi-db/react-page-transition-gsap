@@ -6,14 +6,14 @@ const Header = () => {
 			<NavLink
 				to="/"
 				exact
-				activeStyle={{ fontWeight: "bold", color: "red" }}
+				activeStyle={{ fontWeight: "bold", color: "#653fff" }}
 			>
 				Home
 			</NavLink>
 			<NavLink
 				to="/about"
 				exact
-				activeStyle={{ fontWeight: "bold", color: "red" }}
+				activeStyle={{ fontWeight: "bold", color: "#653fff" }}
 			>
 				About
 			</NavLink>
